@@ -51,8 +51,7 @@ def get_label(arr):
     encoder = None
     with open(encoder_path, "rb") as f:
         encoder = pickle.load(f)
-    res = encoder.inverse_transform(arr)
-    return res
+    return encoder.inverse_transform(arr)
 
 
 ## Trying to implement Explainer
